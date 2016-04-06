@@ -1,0 +1,14 @@
+// -------------------------//
+//    NAVIGATION STYLES 
+//
+// -------------------------//
+
+.site-nav{
+	@include clearfix();
+	padding: 20px 0;
+	a {
+		float: right;
+		margin-left: 25px;
+		@include font-size(1.4);
+	}
+}

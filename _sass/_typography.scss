@@ -1,0 +1,86 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+
+$headline-type:   "Lato", sans-serif;
+$body-type:       "Lato", sans-serif;
+
+.sans-serif   { font-family: $headline-type; }
+.serif        { font-family: $body-type; }
+
+$headline-color:  col("dark-purple");
+$body-color:      col("off-white");
+$link-color:      col("off-white");
+$link-hover:      col("dark-purple");
+
+html {
+  font-size: 62.5%;
+}
+body {
+  @include font-size(1.6);
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: $body-type;
+  color: $body-color;
+}
+.small {
+  @include font-size(1.2);
+  line-height: 1.2;
+}
+.spaced {
+  letter-spacing: .3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family: $headline-type;
+  color: $headline-color;
+}
+
+h1, .text-h1 { @include font-size(5.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 300; }
+h2, .text-h2 { @include font-size(4.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 300; }
+h3, .text-h3 { @include font-size(2.8); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 300; }
+h4, .text-h4 { @include font-size(2.2); line-height: 1.22;  letter-spacing: -.08rem; font-weight: 300; }
+h5, .text-h5 { @include font-size(1.5); line-height: 1.25;  letter-spacing: -.05rem; font-weight: 700; }
+h6, .text-h6 { @include font-size(1.2); line-height: 1.25;  letter-spacing: 0;       font-weight: 700; }
+
+
+
+p,
+ul,
+ol,
+dl {
+  margin-top: 0;
+  color: col("white");
+}
+
+a {
+  color: $link-color;
+  text-decoration: none !important;
+}
+a:hover { color: $link-hover; }
+
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid col("light-gray");
+}
+
+blockquote {
+  font-family: $body-type;
+  font-style: italic;
+  p, .author {
+    @include font-size(2.2);
+    line-height: 1.4;
+    margin-bottom: 0px;
+  }
+  border-left: 6px solid;
+  border-left-color: col("purple");
+  margin-left: 0;
+  padding-left: 20px;
+  margin: 50px 0 50px 0;
+}

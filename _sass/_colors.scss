@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #COLOR LIST
+\*------------------------------------*/
+
+$colors: (
+  primary:         #63a593,
+  off-white:           #fffaff,
+  dark-purple:          #5c415d,
+  light-gray:      #E5E5E5,
+);
+
+// Use key for color
+// Usage: foo { color: col("primary"); }
+// Compiles: foo { color: #57C9B4; }
+@function col($col) {
+  @return map-get($colors, '#{$col}');
+}
+
+
+body {
+  background-color: col("primary");
+}
+
+
+
+

@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/* Button default */
+.btn,
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: $headline-type;
+  @include font-size(1.6);
+  display: inline-block;
+  height: 50px;
+  padding: 0 35px;
+  margin-top: 10px;
+  text-align: center;
+  @include font-size(1.6);
+  font-weight: 200;
+  line-height: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  @include border-radius(100px);
+  cursor: pointer;
+  border:0;
+  -webkit-appearance: none;
+  appearance:none;
+  box-sizing: border-box;
+  &:focus {
+    outline:0;
+  }
+}
+
+.btn-sm {
+  height: 40px;
+  padding: 0 30px;
+  @include font-size(1.4);
+  line-height: 37px;
+  min-width: 150px;
+}
+
+@each $color, $hex in $colors {
+
+  // button color crashoverrides
+  .btn.btn-shadow.btn-#{$color} {
+    background-color: $hex;
+    border-color: darken($hex, 5%);
+    color:#fff;
+    box-shadow: 0 3px 0 0 darken($hex, 12%);
+    &:hover {
+      background-color: lighten($hex, 7%);
+      text-decoration: none;
+    }
+  }
+
+  .btn.btn-#{$color} {
+    background-color: $hex;
+    border-color: darken($hex, 5%);
+    color:#fff;
+    &:hover {
+      background-color: lighten($hex, 7%);
+      text-decoration: none;
+    }
+  }
+
+  .btn.btn-alt.btn-#{$color} {
+    background-color:transparent;
+    border:1px solid;
+    border-color:$hex;
+    color:$hex;
+    box-shadow:none;
+    &:hover {
+      background-color: $hex;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+

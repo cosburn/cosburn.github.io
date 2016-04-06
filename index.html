@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="post-list">
+    {% for post in site.posts %}
+
+    <div class="row post-preview clearfix">
+      <div class="seven columns">
+        <h2 class="uppercase">
+          <a class="post-link text-dark-purple" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-meta small">{{ post.author }} &#9679; {{ post.date | date: "%b %-d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <p class="small"><a href=" {{ post.url | prepend: site.baseurl }}">read more ></a></p>
+      </div>
+
+      <div class="five columns">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img class="img-responsive" src="{{ post.image }}" />
+        </a>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+
+
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>

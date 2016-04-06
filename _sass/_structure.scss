@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #STRUCTURE
+\*------------------------------------*/
+
+.site-footer {
+	border-top: 2px solid col(off-white);
+}
+.site-header {
+	border-bottom: 2px solid col(off-white);
+	margin-bottom: 100px;
+	.site-title {
+		float: left;
+		letter-spacing: 1rem;
+		@include font-size(2.4);
+		color: col(off-white);
+	}
+}
+.post-preview {
+	border-top: 2px solid col(off-white);
+	margin-bottom: 30px;
+	padding-top: 30px;
+	img {
+		// margin-top: 20px;
+		border: 1px solid col(off-white);
+	}
+}

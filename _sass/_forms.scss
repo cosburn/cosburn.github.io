@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    #FORMS GENERIC
+\*------------------------------------*/
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  font-family: $headline-type;
+  font-weight: 700;
+  height: 55px;
+  padding: 6px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid col("form-border");
+  @include border-radius(100px);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: col("form-gray");
+  font-weight: 400;
+  @include font-size(1.6);
+  margin-bottom:2em;
+  width:100%;
+}
+
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid col("light-blue");
+  outline: 0;
+  color: col("mid-black");
+
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+
+/*------------------------------------*\
+    #FORM SIGN UP
+\*------------------------------------*/
+.form-subscribe {
+  width:100%;
+  max-width:426px;
+  margin:0 auto;
+  input {
+    display: inline-block;
+    height:55px;
+    float:left;
+  }
+  input[type="email"] {
+    @include border-radius(100px 0 0 100px);
+    border:0;
+    width:68%;
+  }
+  input[type="submit"] {
+    @include border-radius(0 100px 100px 0);
+    border:0;
+    width:32%;
+    margin-top:0;
+    height:55px;
+    padding:0 5%;
+  }
+}
