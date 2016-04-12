@@ -1,16 +1,23 @@
 ---
 layout: default
+title: blog
 ---
 
 <div class="home">
 
   <div class="post-list">
     {% for post in site.posts %}
-
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <svg class="line"><line x1="0" y1="0" x2="1200" y2="0" /></svg>
+    {% elsif thecycle == 'even' %}
+    <svg class="line"><line x1="0" y1="0" x2="1200" y2="0" /></svg>
+    {% endif %}
+ 
     <div class="row post-preview clearfix">
       <div class="seven columns">
         <h2 class="uppercase">
-          <a class="post-link text-dark-purple" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link " href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p class="post-meta small">{{ post.author }} &#9679; {{ post.date | date: "%b %-d, %Y" }}</p>
         <p>{{ post.excerpt }}</p>

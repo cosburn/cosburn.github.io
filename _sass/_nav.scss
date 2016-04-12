@@ -5,10 +5,12 @@
 
 .site-nav{
 	@include clearfix();
-	padding: 20px 0;
+	// padding-top: 20px;
+	float: right;
 	a {
-		float: right;
-		margin-left: 25px;
+		display: block;
 		@include font-size(1.4);
+		&:not(:first-child) { margin-top: 10px; }
+		text-align: right;
 	}
 }

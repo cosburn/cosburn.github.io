@@ -2,6 +2,8 @@
 
   <div class="wrapper">
 
+    <!-- <svg class="line up"><line x1="0" y1="0" x2="1200" y2="0" /></svg> -->
+
     <a class="site-title uppercase" href="{{ site.baseurl }}/">{{ site.title | remove: " " }}</a>
 
     <nav class="site-nav">
@@ -13,6 +15,10 @@
         {% endfor %}
       </div>
     </nav>
+
+    <svg class="line"><line x1="0" y1="0" x2="1200" y2="0" /></svg>
+
+    <h1 class="page-title">{{ page.title }}</h1>
 
   </div>
 
