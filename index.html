@@ -6,6 +6,8 @@ title: blog
 <div class="home">
 
   <div class="post-list">
+    <h1 class="page-title">{{ page.title }}</h1>
+    
     {% for post in site.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
@@ -15,19 +17,18 @@ title: blog
     {% endif %}
  
     <div class="row post-preview clearfix">
-      <div class="seven columns">
+      <div class="four columns">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img class="img-responsive" src="{{ post.image }}" />
+        </a>
+      </div>
+      <div class="six columns">
         <h2 class="uppercase">
           <a class="post-link " href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p class="post-meta small">{{ post.author }} &#9679; {{ post.date | date: "%b %-d, %Y" }}</p>
         <p>{{ post.excerpt }}</p>
         <p class="small"><a href=" {{ post.url | prepend: site.baseurl }}">read more ></a></p>
-      </div>
-
-      <div class="five columns">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img class="img-responsive" src="{{ post.image }}" />
-        </a>
       </div>
     </div>
 

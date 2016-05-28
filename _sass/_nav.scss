@@ -8,7 +8,7 @@
 	// padding-top: 20px;
 	float: right;
 	a {
-		display: block;
+		display: inline-block;
 		@include font-size(1.4);
 		&:not(:first-child) { margin-top: 10px; }
 		text-align: right;
