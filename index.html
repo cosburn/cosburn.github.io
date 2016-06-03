@@ -3,12 +3,13 @@ layout: default
 title: blog
 ---
 
-<div class="home">
+<div class="container">
 
   <div class="post-list">
-    <h1 class="page-title">{{ page.title }}</h1>
-    
+    <!-- <h1 class="page-title">{{ page.title }}</h1> -->
+
     {% for post in site.posts %}
+
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <svg class="line"><line x1="0" y1="0" x2="1200" y2="0" /></svg>
@@ -23,12 +24,12 @@ title: blog
         </a>
       </div>
       <div class="six columns">
-        <h2 class="uppercase">
+        <h2 class="post-title uppercase">
           <a class="post-link " href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p class="post-meta small">{{ post.author }} &#9679; {{ post.date | date: "%b %-d, %Y" }}</p>
         <p>{{ post.excerpt }}</p>
-        <p class="small"><a href=" {{ post.url | prepend: site.baseurl }}">read more ></a></p>
+        <a class="btn btn-secondary uppercase" href=" {{ post.url | prepend: site.baseurl }}">read more</a>
       </div>
     </div>
 

@@ -1,15 +1,36 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="container">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title text-h2" itemprop="name headline">{{ page.title }}</h1>
+	  
+	  <p class="post-meta small"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+	</header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+	<div class="row">
+		<article class="post eight columns" itemscope itemtype="http://schema.org/BlogPosting">
+		  <img class="img-responsive" src="{{ page.image }}" />
+		  <div class="post-content" itemprop="articleBody">
+		    {{ content }}
+		  </div>
+		</article>
+		<div class="four columns">
+			<aside class="post-suggestions">
+				<h4 class="uppercase">You might also like...</h4>
+		    {% for post in site.posts %}
+		 			<div class="aside-post">
+			      <a href="{{ post.url | prepend: site.baseurl }}">
+			        <img class="img-responsive" src="{{ post.image }}" />
+			        <p class="text-heavy uppercase">
+			        {{ post.title }}
+				      </p>
+			      </a>
+		      </div>
+		    {% endfor %}
+			</aside>
+		</div>
+	</div>
 
-</article>
+</div>

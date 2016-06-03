@@ -9,8 +9,9 @@
 	float: right;
 	a {
 		display: inline-block;
-		@include font-size(1.4);
-		&:not(:first-child) { margin-top: 10px; }
+		@include font-size(1.9);
+		font-weight: 600;
+		&:not(:last-child) { padding-right: 20px; }
 		text-align: right;
 	}
 }

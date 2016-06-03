@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-04-06 09:44:03 -0500
 author: Claire Osburn
-image:  'http://placehold.it/1000x1000'
+image:  'http://placehold.it/1200x1200'
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways.
 

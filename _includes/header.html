@@ -1,12 +1,8 @@
 <header class="site-header">
 
-  <div class="wrapper">
+  <div class="container">
 
-    <!-- <svg class="line up"><line x1="0" y1="0" x2="1200" y2="0" /></svg> -->
-
-    <svg class="line"><line x1="0" y1="0" x2="1200" y2="0" /></svg>
-
-    <h1><a class="site-title text-dark-purple uppercase" href="{{ site.baseurl }}/">{{ site.title | remove: " " }}</a></h1>
+    <!-- <svg class="line"><line x1="817" y1="0" x2="1200" y2="0" /></svg> -->
 
     <nav class="site-nav">
       <div class="trigger">
@@ -17,6 +13,15 @@
         {% endfor %}
       </div>
     </nav>
+
+    <h1 class="site-title ">
+      <a class="uppercase" href="{{ site.baseurl }}/">
+        <span class="text-dark-purple">C<span class="name">laire</span></span>
+        <span class="text-secondary">O<span class="name">sburn</span></span>
+      </a>
+    </h1>
+
+    <!-- {{ site.title | remove: " " }} -->
 
   </div>
 

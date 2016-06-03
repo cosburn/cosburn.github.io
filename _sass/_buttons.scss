@@ -12,18 +12,18 @@ input[type="button"] {
   font-family: $headline-type;
   @include font-size(1.6);
   display: inline-block;
-  height: 50px;
-  padding: 0 35px;
+  height: 40px;
+  padding: 0 25px;
   margin-top: 10px;
   text-align: center;
   @include font-size(1.6);
-  font-weight: 200;
-  line-height: 50px;
+  // font-weight: 200;
+  line-height: 35px;
   text-decoration: none;
   white-space: nowrap;
-  @include border-radius(100px);
+  // @include border-radius(100px);
   cursor: pointer;
-  border:0;
+  border: 1px solid col(dark-purple);
   -webkit-appearance: none;
   appearance:none;
   box-sizing: border-box;
@@ -56,10 +56,10 @@ input[type="button"] {
 
   .btn.btn-#{$color} {
     background-color: $hex;
-    border-color: darken($hex, 5%);
-    color:#fff;
+    // border-color: darken($hex, 5%);
+    // color:#fff;
     &:hover {
-      background-color: lighten($hex, 7%);
+      background-color: lighten($hex, 2%);
       text-decoration: none;
     }
   }

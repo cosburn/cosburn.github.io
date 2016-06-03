@@ -2,50 +2,77 @@
     #STRUCTURE
 \*------------------------------------*/
 
-.site-footer {
-	
-}
 .site-header {
-	margin-bottom: 80px;
+	margin-bottom: 60px;
+	position: relative;
+	border-top: 15px solid col(seafoam);
 	.site-title {
 		float: left;
-		// letter-spacing: 1rem;
-		// padding-top: 20px;
-		// @include font-size(2.4);
-		// color: col(off-white);
+		@include font-size(4.3);
+		margin-top: -12px;
+		letter-spacing: -4px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: -17px;
+			top:-50px;
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			background-color: rgba(250,200,205,.2);
+			z-index: -1;
+			cursor: pointer;
+		}
+		.site-nav a {
+			&:hover { 
+				background-color: rgba(250,200,205,.2); 
+			}
+		}
 	}
 }
 .page-title {
 	font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: .1em;
   margin-bottom: 0;
 }
 .post-list {
-	margin-top: 175px;
-}
-.post-preview {
-	margin-bottom: 30px;
-	padding-top: 30px;
-	img {
-		// margin-top: 20px;
-		// border: 1px solid col(off-white);
+	.post-preview {
+		margin-bottom: 15px;
+		padding-top: 15px;
+		img {
+			// margin-top: 20px;
+			// border: 1px solid col(off-white);
+		}
+		.post-title {
+			margin-bottom: 5px;
+		}
+		.post-meta {
+			margin-bottom: 35px;
+		}
 	}
 }
+
+aside.post-suggestions {
+	border-left: 2px solid col(seafoam);
+	padding-left: 40px;
+	.aside-post {
+		padding: 15px 0 35px 0;
+	}
+}
+
 .line {
 	width: 100%;
 	stroke: col(seafoam);
-	stroke-width: 4;
+	stroke-width: 3;
 	height: 5px;
 }
 .line.up { transform: rotate(359deg); }
 .line.down { transform: rotate(1deg); }
 
-// .post-list .line {
-// 	&:nth-child(even) {
-// 		transform: rotate(359deg);
-// 	}
-// 	&:nth-child(odd) {
-// 		transform: rotate(1deg);
-// 	}
-// }
+.site-footer {
+	display: block;
+	width: 100%;
+	background-color: col(seafoam);
+	height: 350px;
+	border-bottom: 50px solid col(secondary);
+}

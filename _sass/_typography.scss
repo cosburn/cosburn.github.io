@@ -12,7 +12,7 @@ $body-type:       "Lato", sans-serif;
 $headline-color:  col("dark-purple");
 $body-color:      col("dark-purple");
 $link-color:      col("dark-purple");
-$link-hover:      col("seafoam");
+$link-hover:      col("light-purple");
 
 html {
   font-size: 62.5%;
@@ -32,6 +32,9 @@ body {
   letter-spacing: .3rem;
 }
 
+.text-light { font-weight: 300; }
+.text-heavy { font-weight: 700; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -39,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $headline-color;
 }
 
-h1, .text-h1 { @include font-size(5.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
+h1, .text-h1 { @include font-size(4.3); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
 h2, .text-h2 { @include font-size(3.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
 h3, .text-h3 { @include font-size(2.8); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 300; }
 h4, .text-h4 { @include font-size(2.2); line-height: 1.22;  letter-spacing: -.08rem; font-weight: 300; }
