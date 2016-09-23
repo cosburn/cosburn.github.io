@@ -1,6 +1,7 @@
 /*------------------------------------*\
     #STRUCTURE
 \*------------------------------------*/
+
 header {
 	.site-header { border-bottom: 1px solid col(light-gray); }
 	.logo { width: 60px; margin-bottom: 2rem; }
@@ -55,79 +56,3 @@ section.toolbox {
 
 footer p { margin-bottom: 0; }
 
-
-
-// .site-header {
-// 	margin-bottom: 60px;
-// 	position: relative;
-// 	border-top: 15px solid col(seafoam);
-// 	.site-title {
-// 		float: left;
-// 		@include font-size(4.3);
-// 		margin-top: -12px;
-// 		letter-spacing: -4px;
-// 		&:after {
-// 			content: '';
-// 			position: absolute;
-// 			left: -17px;
-// 			top:-50px;
-// 			height: 150px;
-// 			width: 150px;
-// 			border-radius: 50%;
-// 			background-color: rgba(250,200,205,.2);
-// 			z-index: -1;
-// 			cursor: pointer;
-// 		}
-// 		.site-nav a {
-// 			&:hover { 
-// 				background-color: rgba(250,200,205,.2); 
-// 			}
-// 		}
-// 	}
-// }
-// .page-title {
-// 	font-size: 16px;
-//   text-transform: uppercase;
-//   margin-bottom: 0;
-// }
-// .post-list {
-// 	.post-preview {
-// 		margin-bottom: 15px;
-// 		padding-top: 15px;
-// 		img {
-// 			// margin-top: 20px;
-// 			// border: 1px solid col(off-white);
-// 		}
-// 		.post-title {
-// 			margin-bottom: 5px;
-// 		}
-// 		.post-meta {
-// 			margin-bottom: 35px;
-// 		}
-// 	}
-// }
-
-// aside.post-suggestions {
-// 	border-left: 2px solid col(seafoam);
-// 	padding-left: 40px;
-// 	.aside-post {
-// 		padding: 15px 0 35px 0;
-// 	}
-// }
-
-// .line {
-// 	width: 100%;
-// 	stroke: col(seafoam);
-// 	stroke-width: 3;
-// 	height: 5px;
-// }
-// .line.up { transform: rotate(359deg); }
-// .line.down { transform: rotate(1deg); }
-
-// .site-footer {
-// 	display: block;
-// 	width: 100%;
-// 	background-color: col(seafoam);
-// 	height: 350px;
-// 	border-bottom: 50px solid col(secondary);
-// }

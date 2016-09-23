@@ -9,7 +9,7 @@
 title: claire osburn
 email: claire.a.osburn@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  The blog and portfolio of Claire Osburn, Web Designer & Developer located in San Antonio. All thoughts are my own.
+  The portfolio of Claire Osburn, Web Designer & Developer located in San Antonio. All thoughts are my own.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://claireosburn.com" # the base hostname & protocol for your site
 twitter_username: claireosburn436
