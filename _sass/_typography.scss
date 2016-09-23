@@ -1,31 +1,31 @@
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400|Work+Sans:400,600,800);
 
-$headline-type:   "Lato", sans-serif;
-$body-type:       "Lato", sans-serif;
+$headline-type:   "Work Sans", sans-serif;
+$body-type:       "Roboto", sans-serif;
 
-.sans-serif   { font-family: $headline-type; }
-.serif        { font-family: $body-type; }
+.headline-type    { font-family: $headline-type; }
+.body-type        { font-family: $body-type; }
 
-$headline-color:  col("dark-purple");
-$body-color:      col("dark-purple");
-$link-color:      col("dark-purple");
-$link-hover:      col("light-purple");
+$headline-color:  col("dark-gray");
+$body-color:      col("dark-gray");
+$link-color:      col("co-blue");
+$link-hover:      col("light-blue");
 
 html {
   font-size: 62.5%;
 }
 body {
-  @include font-size(1.6);
+  @include font-size(1.8);
   line-height: 1.6;
   font-weight: 300;
   font-family: $body-type;
   color: $body-color;
 }
 .small {
-  @include font-size(1.2);
+  @include font-size(1.4);
   line-height: 1.2;
 }
 .spaced {
@@ -42,12 +42,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $headline-color;
 }
 
-h1, .text-h1 { @include font-size(4.3); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
-h2, .text-h2 { @include font-size(3.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
-h3, .text-h3 { @include font-size(2.8); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 300; }
-h4, .text-h4 { @include font-size(2.2); line-height: 1.22;  letter-spacing: -.08rem; font-weight: 300; }
-h5, .text-h5 { @include font-size(1.5); line-height: 1.25;  letter-spacing: -.05rem; font-weight: 700; }
-h6, .text-h6 { @include font-size(1.2); line-height: 1.25;  letter-spacing: 0;       font-weight: 700; }
+h1, .text-h1 { @include font-size(6.3); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 800; }
+h2, .text-h2 { @include font-size(4.0); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 800; }
+h3, .text-h3 { @include font-size(2.8); line-height: 1.22;  letter-spacing: -.1rem;  font-weight: 600; }
+h4, .text-h4 { @include font-size(1.8); line-height: 1.22;  letter-spacing: .01rem;  font-weight: 400; }
+h5, .text-h5 { @include font-size(1.5); line-height: 1.25;  letter-spacing: -.05rem; font-weight: 600; }
+h6, .text-h6 { @include font-size(1.2); line-height: 1.25;  letter-spacing: 0;       font-weight: 600; }
 
 
 

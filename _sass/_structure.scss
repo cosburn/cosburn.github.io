@@ -1,78 +1,126 @@
 /*------------------------------------*\
     #STRUCTURE
 \*------------------------------------*/
+header {
+	.site-header { border-bottom: 1px solid col(light-gray); }
+	.logo { width: 60px; margin-bottom: 2rem; }
+}
 
-.site-header {
-	margin-bottom: 60px;
-	position: relative;
-	border-top: 15px solid col(seafoam);
-	.site-title {
-		float: left;
-		@include font-size(4.3);
-		margin-top: -12px;
-		letter-spacing: -4px;
-		&:after {
-			content: '';
-			position: absolute;
-			left: -17px;
-			top:-50px;
-			height: 150px;
-			width: 150px;
-			border-radius: 50%;
-			background-color: rgba(250,200,205,.2);
-			z-index: -1;
-			cursor: pointer;
-		}
-		.site-nav a {
-			&:hover { 
-				background-color: rgba(250,200,205,.2); 
-			}
-		}
-	}
-}
-.page-title {
-	font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.post-list {
-	.post-preview {
-		margin-bottom: 15px;
-		padding-top: 15px;
-		img {
-			// margin-top: 20px;
-			// border: 1px solid col(off-white);
-		}
-		.post-title {
-			margin-bottom: 5px;
-		}
-		.post-meta {
-			margin-bottom: 35px;
+section {
+	padding: 50px 0;
+	margin: 50px 0;
+	.section-title {
+		text-align: center;
+		hr { 
+			max-width: 400px; 
+			margin-top: 0;
 		}
 	}
 }
 
-aside.post-suggestions {
-	border-left: 2px solid col(seafoam);
-	padding-left: 40px;
-	.aside-post {
-		padding: 15px 0 35px 0;
+section.intro {
+	img {
+		max-width: 350px;
+		border-radius: 50%;
+		margin-left: 30px;
 	}
 }
 
-.line {
-	width: 100%;
-	stroke: col(seafoam);
-	stroke-width: 3;
-	height: 5px;
+section.work {
+	.row { padding: 40px 0; }
+	.tag {
+		padding: 0 5px;
+		&.ux 		{ background-color: col(light-blue); }
+		&.html  { background-color: col(seafoam); }
+		&.css		{ background-color: col(light-pink); }
+		&.cms		{ background-color: col(co-orange); }
+		&.js		{ background-color: col(co-yellow); }
+	}
+	img {
+		border: 5px solid col(light-gray);
+		// border-radius: 5px;
+	}
 }
-.line.up { transform: rotate(359deg); }
-.line.down { transform: rotate(1deg); }
 
-.site-footer {
-	display: block;
-	width: 100%;
-	background-color: col(seafoam);
-	height: 350px;
-	border-bottom: 50px solid col(secondary);
+section.toolbox {
+	.row { padding: 20px 0; }
 }
+
+footer p { margin-bottom: 0; }
+
+
+
+// .site-header {
+// 	margin-bottom: 60px;
+// 	position: relative;
+// 	border-top: 15px solid col(seafoam);
+// 	.site-title {
+// 		float: left;
+// 		@include font-size(4.3);
+// 		margin-top: -12px;
+// 		letter-spacing: -4px;
+// 		&:after {
+// 			content: '';
+// 			position: absolute;
+// 			left: -17px;
+// 			top:-50px;
+// 			height: 150px;
+// 			width: 150px;
+// 			border-radius: 50%;
+// 			background-color: rgba(250,200,205,.2);
+// 			z-index: -1;
+// 			cursor: pointer;
+// 		}
+// 		.site-nav a {
+// 			&:hover { 
+// 				background-color: rgba(250,200,205,.2); 
+// 			}
+// 		}
+// 	}
+// }
+// .page-title {
+// 	font-size: 16px;
+//   text-transform: uppercase;
+//   margin-bottom: 0;
+// }
+// .post-list {
+// 	.post-preview {
+// 		margin-bottom: 15px;
+// 		padding-top: 15px;
+// 		img {
+// 			// margin-top: 20px;
+// 			// border: 1px solid col(off-white);
+// 		}
+// 		.post-title {
+// 			margin-bottom: 5px;
+// 		}
+// 		.post-meta {
+// 			margin-bottom: 35px;
+// 		}
+// 	}
+// }
+
+// aside.post-suggestions {
+// 	border-left: 2px solid col(seafoam);
+// 	padding-left: 40px;
+// 	.aside-post {
+// 		padding: 15px 0 35px 0;
+// 	}
+// }
+
+// .line {
+// 	width: 100%;
+// 	stroke: col(seafoam);
+// 	stroke-width: 3;
+// 	height: 5px;
+// }
+// .line.up { transform: rotate(359deg); }
+// .line.down { transform: rotate(1deg); }
+
+// .site-footer {
+// 	display: block;
+// 	width: 100%;
+// 	background-color: col(seafoam);
+// 	height: 350px;
+// 	border-bottom: 50px solid col(secondary);
+// }

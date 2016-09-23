@@ -3,10 +3,166 @@ layout: default
 title: Blog
 ---
 
-<div class="container">
+
+
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two">
+        <img class="pull-right img-responsive" src="/images/claire-alt.png" alt="this is me, claire" />
+        <h1>Hello!</h1>
+        <p>
+          My name's Claire Osburn, I'm a Front End Developer in San Antonio, TX. I'm currently part of the brilliant team at <a href="http://biltt.co" title="biltt.co">BILTT</a> helping websites and users understand each other better. 
+        </p>
+        <p>
+          I'm also taking freelance projects, <a href="mailto:claire.a.osburn@gmail.com" title="contact me">and always looking for a new challenge</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="container">
+    <div class="section-title">
+      <h2>Work</h2>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="five columns offset-by-two">
+        <img class="img-responsive" src="/images/nebulab-1.png" alt="">
+      </div>
+      <div class="three columns">
+        <h3>Nebulab</h3>
+        <p class="small text-medium-gray">
+          Contributed to full redesign of web app for scientific researchers to manage files and metadata. Custom pattern library built on top of Bootstrap for scaleability.
+        </p>
+        <ul class="no-style">
+          <li><span class="tag ux">UX/UI</span></li>
+          <li><span class="tag html">HTML</span></li>
+          <li><span class="tag css">CSS &amp; Sass</span></li>
+          <li><span class="tag js">JavaScript &amp; JQuery</span></li>
+        </ul>
+      </div>
+    </div><!--./row-->
+    <div class="row">
+      <div class="five columns offset-by-two">
+        <img class="img-responsive" src="/images/massventure-1.png" alt="">
+      </div>
+      <div class="three columns">
+        <h3>MassVenture</h3>
+        <p class="small text-medium-gray">
+          Contributed to full redesign of web app for crowdfunding real estate ventures in Texas. Custom pattern library built on top of Bootstrap for scaleability.
+        </p>
+        <ul class="no-style">
+          <li><span class="tag ux">UX/UI</span></li>
+          <li><span class="tag html">HTML</span></li>
+          <li><span class="tag css">CSS &amp; Sass</span></li>
+        </ul>
+      </div>
+    </div><!--./row-->
+    <div class="row">
+      <div class="five columns offset-by-two">
+        <img class="img-responsive" src="/images/idea.png" alt="">
+      </div>
+      <div class="three columns">
+        <h3>IDEA Public Schools</h3>
+        <p class="small text-medium-gray">
+          Maintain and update websites across campuses and departments, contribute to new projects and build solutions for custom CMS needs.
+        </p>
+        <ul class="no-style">
+          <li><span class="tag cms">Craft CMS</span></li>
+          <li><span class="tag html">HTML</span></li>
+          <li><span class="tag css">CSS &amp; Sass</span></li>
+          <li><span class="tag js">JavaScript &amp; JQuery</span></li>
+        </ul>
+      </div>
+    </div><!--./row-->
+  </div>
+</section>
+
+<section class="toolbox">
+  <div class="container">
+    <div class="section-title">
+      <h2>Toolbox</h2>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="two columns offset-by-four">
+        <h4 class="text-medium-gray uppercase">Skills</h4>
+      </div>
+      <div class="four columns">
+        <ul class="no-style">
+          <li>Javascript &amp; JQuery, Angular, React</li>
+          <li>HTML</li>
+          <li>CSS &amp; Sass</li>
+          <li>UX/UI &amp; Web Design</li>
+          <li>Information Architecture</li>
+        </ul>
+      </div>
+    </div><!--./row-->
+    <div class="row">
+      <div class="two columns offset-by-four">
+        <h4 class="text-medium-gray uppercase">Learning</h4>
+      </div>
+      <div class="four columns">
+        <ul class="no-style">
+          <li>Team Treehouse</li>
+          <li>Lynda.com</li>
+        </ul>
+      </div>
+    </div><!--./row-->
+    <div class="row">
+      <div class="two columns offset-by-four">
+        <h4 class="text-medium-gray uppercase">Always Coming Back To</h4>
+      </div>
+      <div class="four columns">
+        <ul class="no-style">
+          <li>Design of Everyday Things</li>
+          <li>Don't Make Me Think</li>
+          <li>O'Rielly Information Architecture Book</li>
+          <li>CSS Tricks</li>
+          <!-- <li>The Experimental Layout Lab of Jen Simmons</li> -->
+        </ul>
+      </div>
+    </div><!--./row-->
+    <div class="row">
+      <div class="two columns offset-by-four">
+        <h4 class="text-medium-gray uppercase">Inspiration</h4>
+      </div>
+      <div class="four columns">
+        <ul class="no-style">
+          <li>Codepen</li>
+          <li>Invision Blog</li>
+          <li>One Page Love</li>
+          <li>siteInspire</li>
+        </ul>
+      </div>
+    </div><!--./row-->
+  </div>
+</section>
+
+<section>
+  <div class="container text-center">
+    <h2 class="uppercase">Get in Touch</h2>
+    <p><a href="mailto:claire.a.osburn@gmail.com" title="email me">claire dot a dot osburn at gmail.com</a></p>
+    <p><a href="https://github.com/cosburn" title="my github">github.com/cosburn</a></p>
+    <p><a href="https://twitter.com/claireosburn436" title="my twitter">twitter.com/claireosburn436</a></p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
 
   <div class="post-list">
-    <!-- <h1 class="page-title">{{ page.title }}</h1> -->
+    <h1 class="page-title">{{ page.title }}</h1>
 
     {% for post in site.posts %}
 
@@ -36,8 +192,4 @@ title: Blog
     {% endfor %}
   </div>
 
-
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-</div>
+</div> -->
