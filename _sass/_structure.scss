@@ -35,14 +35,9 @@ section.intro {
 }
 
 section.work {
-	.row { padding: 40px 0; }
-	.tag {
-		padding: 0 5px;
-		&.ux 		{ background-color: col(light-blue); }
-		&.html  { background-color: col(seafoam); }
-		&.css		{ background-color: col(light-pink); }
-		&.cms		{ background-color: col(co-orange); }
-		&.js		{ background-color: col(co-yellow); }
+	.row { 
+		padding: 40px 0; 
+		&:hover { background-color: col(off-white); }
 	}
 	img {
 		border: 5px solid col(light-gray);

@@ -7,3 +7,17 @@ ol.no-style {
 	list-style: none;
 	padding-left: 0;
 }
+
+ul.inline,
+ol.inline {
+	li { display: inline-block; }
+}
+
+.tag {
+	padding: 0 5px;
+	&.ux 		{ background-color: col(light-blue); }
+	&.html  { background-color: col(seafoam); }
+	&.css		{ background-color: col(light-pink); }
+	&.cms		{ background-color: col(co-orange); }
+	&.js		{ background-color: col(co-yellow); }
+}
