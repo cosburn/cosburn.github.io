@@ -63,7 +63,7 @@ a {
   color: $link-color;
   text-decoration: none !important;
 }
-a:hover { color: $link-hover; }
+a:hover { color: $link-hover; cursor: pointer; }
 
 
 hr {

@@ -15,8 +15,11 @@ ol.inline {
 
 .tag {
 	padding: 0 5px;
+	margin: 2px;
+	@include font-size(1.6);
 	&.ux 		{ background-color: col(light-blue); }
-	&.html  { background-color: col(seafoam); }
+	&.content 	{ background-color: col(light-purple); }
+	&.html  	{ background-color: col(seafoam); }
 	&.css		{ background-color: col(light-pink); }
 	&.cms		{ background-color: col(co-orange); }
 	&.js		{ background-color: col(co-yellow); }
